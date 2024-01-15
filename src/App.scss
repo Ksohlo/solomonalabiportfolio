@@ -5,18 +5,31 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-:root{
-    $ash: rgb(224, 224, 224);
+
+$ash: rgb(224, 224, 224);
     $ash2:rgb(184, 184, 184);
     $orange: rgb(255, 187, 0);
     $white: rgb(255, 255, 255);
     $bg: rgb(2, 0, 12);
     $bg2: rgb(24, 21, 43);
-}
+    $scrollbg: rgb(95, 93, 114);
 html, body{
     overflow-x: hidden;
     width: 100%;
 }
-html::-webkit-scrollbar, body::-webkit-scrollbar{
+html::-webkit-scrollbar{
     display: none;
+}
+html::-webkit-scrollbar{
+    width: 10px;
+    height: 15px;
+    background-color: $scrollbg;
+    display: block;
+}
+html::-webkit-scrollbar-thumb{
+    width: 5px;
+    height: 10px;
+    border-radius: 4px;
+    margin: 3px;
+    background-color: $bg;
 }

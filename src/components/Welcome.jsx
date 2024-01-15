@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Project from './Projects';
 import Technologies from './Technologies';
 import About from './About.Jsx';
+import Footer from './Footer';
 
 
 
@@ -27,6 +28,7 @@ const Welcome = ()=>{
             <Project />
             <Technologies />
             <About />
+            <Footer />
         </>
     )
 }

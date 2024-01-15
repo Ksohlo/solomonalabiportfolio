@@ -43,8 +43,8 @@ const Project = ()=>{
                             <p>HTML5   CSS3   Javascript</p>
                         </div>
                         <div className="btn">
-                            <Link>Live</Link>
-                            <Link>Code</Link>
+                            <Link to={'https://ksohlo.github.io/gpa_calculator/'}>Live</Link>
+                            <Link to={'https://github.com/Ksohlo/gpa_calculator'}>Code</Link>
                         </div>
                     </div>
 
@@ -77,8 +77,8 @@ const Project = ()=>{
                             <p>HTML5   CSS3   Javascript</p>
                         </div>
                         <div className="btn">
-                            <Link>Live</Link>
-                            <Link>Code</Link>
+                            <Link to={'https://ksohlo.github.io/FlowBank.github.io/'}>Live</Link>
+                            <Link to={'https://github.com/Ksohlo/FlowBank.github.io'}>Code</Link>
                         </div>
                     </div>
 
@@ -94,8 +94,8 @@ const Project = ()=>{
                             <p>HTML5   CSS3   Javascript React</p>
                         </div>
                         <div className="btn">
-                            <Link>Live</Link>
-                            <Link>Code</Link>
+                            <Link to={'https://bf02ea03.flow-bank.pages.dev/'}>Live</Link>
+                            <Link to={'https://github.com/Ksohlo/Flow_Bank'}>Code</Link>
                         </div>
                     </div>
                 </div>
