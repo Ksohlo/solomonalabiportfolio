@@ -1,7 +1,7 @@
 import './App.scss'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Nav from './components/Nav'
-import Welcome from './components/welcome'
+import Welcome from './components/Welcome'
 
 function App() {
 
