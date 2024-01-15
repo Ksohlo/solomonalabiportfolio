@@ -1,0 +1,100 @@
+$ash: rgb(224, 224, 224);
+$ash2:rgb(184, 184, 184);
+$orange: rgb(255, 187, 0);
+$white: rgb(255, 255, 255);
+$bg: rgb(2, 0, 12);
+$bg2: rgb(24, 21, 43);
+
+
+.technology{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: $bg;
+    padding: 30px 10px;
+}
+.col{
+    width: 100px;
+    height: 5px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgb(224, 228, 0), rgb(85, 0, 81));
+    margin: 20px 50px;
+}
+.technology h1{
+    font-size: 4rem;
+    color: transparent;
+    background: linear-gradient(90deg, $ash, $bg);
+    background-clip: text;
+    padding: 20px 50px;
+}
+.sub{
+    color: $ash;
+    font-weight: 100;
+    font-size: 1.5rem;
+    width: 750px;
+    margin: 10px 50px;
+}
+.techElements{
+    width: 93%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.tech{
+    width: 400px;
+    height:200px;
+    margin: 40px 0;
+}
+.tech i{
+    font-size: 4rem;
+    color: $orange;
+    margin: 20px 0;
+}
+.tech h3{
+    color: $ash;
+    font-size: 2rem;
+    width: 250px;
+}
+.tech p{
+    color: $ash;
+    font-weight: 100;
+    font-size: 1.5rem;
+    width: 280px;
+    margin: 20px 0px;
+}
+
+
+@media (max-width:700px) {
+    .technology{
+        height: auto;
+    }
+    .technology h1{
+        font-size: 3rem;
+    }
+    .sub{
+        width: 420px;
+        font-size: 1.3rem;
+    }
+    .techElements{
+        flex-direction: column;
+    }
+    .tech{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        height: 150px;
+    }
+    .tech i{
+        font-size: 3rem;
+        margin: 10px 0;
+    }
+    .tech h3{
+        font-size: 1.5rem;
+    }
+    .tech p{
+        font-size: 1.4rem;
+        margin: 10px 0;
+    }
+}

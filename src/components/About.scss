@@ -1,0 +1,63 @@
+$ash: rgb(224, 224, 224);
+$ash2:rgb(184, 184, 184);
+$orange: rgb(255, 187, 0);
+$white: rgb(255, 255, 255);
+$bg: rgb(2, 0, 12);
+$bg2: rgb(24, 21, 43);
+
+
+.about{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px 0 20px;
+    background-color: $bg;
+}
+.about h1{
+    color: transparent;
+    background: linear-gradient(90deg, $ash, $bg);
+    background-clip: text;
+    font-size: 4rem;
+    padding: 20px 80px;
+}
+.des{
+    color: $ash;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 10px 80px;
+}
+.journeys{
+    width: 80%;
+    margin: 50px 80px 20px;
+    display: flex;
+    flex-direction: row;
+}
+.journey{
+    width: 400px;
+    height: auto;
+}
+.journey h3{
+    color: transparent;
+    background: linear-gradient(110deg, $ash, $bg);
+    background-clip: text;
+    font-weight: 900;
+    font-size: 2rem;
+}
+.journey p{
+    color: $ash;
+    margin: 20px 0;
+    font-weight: 100;
+    font-size: 1.3rem;
+    width: 300px;
+}
+
+@media (max-width:700px) {
+    .about h1{
+        font-size: 3rem;
+    }
+    .journeys{
+        flex-direction: column;
+    }
+    .journey h3{
+        font-size: 1.5rem;
+    }
+}

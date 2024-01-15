@@ -1,0 +1,128 @@
+$ash: rgb(224, 224, 224);
+$ash2:rgb(184, 184, 184);
+$orange: rgb(255, 187, 0);
+$white: rgb(255, 255, 255);
+$bg: rgb(2, 0, 12);
+$bg2: rgb(24, 21, 43);
+
+.projectBody{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: $bg;
+    padding: 40px 60px;
+}
+.projectBody h1{
+    width: 800px;
+    margin: 30px auto;
+    font-size: 4rem;
+    color: transparent;
+    background:  linear-gradient(80deg, $white, $ash2);
+    background-clip: text;
+}
+.projects{
+    width: 90%;
+    height: auto;
+    margin: 50px auto 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.projectElement{
+    width: 450px;
+    height: auto;
+    border-radius: 30px;
+    border: 0.5px solid $ash2;
+    margin: 20px 30px;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+}
+.projectElement:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px  1px $ash2;
+}
+.projectElement:hover img{
+    transform: scale(1.1);
+}
+.img{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 30px 0 0;
+    transition: all .5s ease-in-out;
+}
+.text h2{
+    color: transparent;
+    background:  linear-gradient(80deg, $white, $ash2);
+    background-clip: text;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+}
+.color{
+    background: linear-gradient(90deg, rgb(239, 255, 8), rgb(112, 0, 134));
+    width: 100px;
+    height: 3px;
+    border-radius: 20px;
+    margin: 15px auto 10px;
+}
+.text p{
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 5px auto;
+    color: $white;
+}
+.text h3{
+    color: $orange;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto 20px;
+    padding: 1px 100px;
+}
+.btn a{
+    text-decoration: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $orange;
+    background-color: $bg2;
+    transition: .5s;
+} 
+.btn a:hover{
+    box-shadow: 0 0 8px 1px;
+}
+@media (max-width:700px) {
+    .projects{
+        width: 100%;
+    }
+    .projectBody h1{
+        width: 400px;
+        font-size: 2rem;
+        margin: 20px auto;
+    }
+    .img{
+        height: 200px;
+    }
+    .btn{
+        padding: 1px 80px;
+    }
+}

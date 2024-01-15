@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+:root{
+    $ash: rgb(224, 224, 224);
+    $ash2:rgb(184, 184, 184);
+    $orange: rgb(255, 187, 0);
+    $white: rgb(255, 255, 255);
+    $bg: rgb(2, 0, 12);
+    $bg2: rgb(24, 21, 43);
+}
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar{
+    display: none;
+}
