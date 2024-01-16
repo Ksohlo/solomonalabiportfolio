@@ -11,9 +11,9 @@ const Nav = ()=>{
         <nav className="navbar">
                 <Link to="/" className="logo"><i className='bx bx-code-alt'></i> Solomon Alabi</Link>
                 <ul>
-                    <Link ><li>Project</li></Link>
-                    <Link ><li>Technologies</li></Link>
-                    <Link ><li>About</li></Link>
+                    <Link to="/project"><li>Project</li></Link>
+                    <Link to="/technologies" ><li>Technologies</li></Link>
+                    <Link to="/about" ><li>About</li></Link>
                 </ul>
                 <div className="icons">
                     <Link to={'https://github.com/Ksohlo'}><i className='bx bxl-github'></i></Link>
