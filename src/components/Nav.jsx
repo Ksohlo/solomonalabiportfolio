@@ -1,9 +1,7 @@
 import './Nav.scss'
 import twitterX from '../assets/twitterx.png'
 import { Link } from "react-router-dom";
-import Project from './Projects';
-import Technologies from './Technologies';
-import About from './About.Jsx';
+
 
 
 
