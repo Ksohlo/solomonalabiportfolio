@@ -1,5 +1,5 @@
 import './Welcome.scss'
-import video from '../assets/video.mp4'
+import video from '../assets/Video.mp4'
 import twitterX from '../assets/twitterx.png'
 import { Link } from "react-router-dom";
 import Project from './Projects';
