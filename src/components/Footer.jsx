@@ -9,11 +9,11 @@ const Footer = ()=>{
             <div className="contacts">
                 <div className="con">
                     <h5>Call</h5>
-                    <Link to={'tel: +2348026865926'}>+2348026865926</Link>
+                    <Link to={'tel:+2348026865926'}>+2348026865926</Link>
                 </div>
                 <div className="con">
                     <h5>E-mail</h5>
-                    <Link to={"email:alabssouls@gmail.com"}>alabssouls@gmail.com</Link>
+                    <Link to={"mailto:alabssouls@gmail.com"}>alabssouls@gmail.com</Link>
                 </div>
             </div>
             <div className="links">
