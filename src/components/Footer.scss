@@ -54,7 +54,7 @@ $bg2: rgb(24, 21, 43);
     .contacts{
         width: 500px;
         display: block;
-        padding: 20px 50px;
+        padding: 20px 30px;
     }
     .con h5{
         margin-bottom: 10px;
@@ -62,6 +62,7 @@ $bg2: rgb(24, 21, 43);
     }
     .links{
         flex-direction: column;
+        padding: 0 30px;
     }
     
 }

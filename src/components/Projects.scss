@@ -114,10 +114,13 @@ $bg2: rgb(24, 21, 43);
     .projects{
         width: 100%;
     }
+    .projectBody{
+        padding: 40px 10px;
+    }
     .projectBody h1{
-        width: 400px;
-        font-size: 2rem;
-        margin: 20px auto;
+        width: 300px;
+        font-size: 1.6rem;
+        margin: 20px 10px;
     }
     .img{
         height: 200px;

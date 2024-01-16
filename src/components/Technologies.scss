@@ -23,7 +23,7 @@ $bg2: rgb(24, 21, 43);
 .technology h1{
     font-size: 4rem;
     color: transparent;
-    background: linear-gradient(90deg, $ash, $bg);
+    background: linear-gradient(190deg, $ash, $bg);
     background-clip: text;
     padding: 20px 50px;
 }
@@ -73,9 +73,11 @@ $bg2: rgb(24, 21, 43);
     }
     .technology h1{
         font-size: 3rem;
+        padding-left: 10px;
     }
     .sub{
-        width: 420px;
+        margin: 10px 10px;
+        width: 300px;
         font-size: 1.3rem;
     }
     .techElements{

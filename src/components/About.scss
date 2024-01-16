@@ -53,9 +53,14 @@ $bg2: rgb(24, 21, 43);
 @media (max-width:700px) {
     .about h1{
         font-size: 3rem;
+        padding: 20px 30px;
+    }
+    .des{
+        margin: 10px 30px;
     }
     .journeys{
         flex-direction: column;
+        margin: 50px 30px;
     }
     .journey h3{
         font-size: 1.5rem;
