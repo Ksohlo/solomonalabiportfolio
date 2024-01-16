@@ -26,8 +26,8 @@ const Project = ()=>{
                             <p>HTML5   CSS3   Javascript</p>
                         </div>
                         <div className="btn">
-                            <Link>Live</Link>
-                            <Link>Code</Link>
+                            <Link to={'https://ksohlo.github.io/To-do-List.github.io/'}>Live</Link>
+                            <Link to={'https://github.com/Ksohlo/To-do-List.github.io'}>Code</Link>
                         </div>
                     </div>
 
@@ -60,8 +60,8 @@ const Project = ()=>{
                             <p>HTML5   CSS3   Javascript</p>
                         </div>
                         <div className="btn">
-                            <Link>Live</Link>
-                            <Link>Code</Link>
+                            <Link to={'https://ksohlo.github.io/weather-app.github.io/'}>Live</Link>
+                            <Link to={'https://github.com/Ksohlo/weather-app.github.io'}>Code</Link>
                         </div>
                     </div>
 
