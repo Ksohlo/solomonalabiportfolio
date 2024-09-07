@@ -1,9 +1,9 @@
-import img1 from "./assets/projects/addre.png"
-import img2 from "./assets/projects/pp.png"
-import img3 from "./assets/projects/furnish.png"
-import img4 from "./assets/projects/oko.png"
+import img1 from "./assets/projects/addre.png";
+import img2 from "./assets/projects/pp.png";
+import img3 from "./assets/projects/furnish.png";
+import img4 from "./assets/projects/oko.png";
 
-const ProjectList =[
+const ProjectList = [
     {
         id: 1,
         image: img1,
@@ -48,7 +48,7 @@ const ProjectList =[
             code: "https://github.com/CHSGI/Tributetookorafor"
         } 
     },
-]
+];
 
 
 const TechList =[
@@ -113,22 +113,23 @@ const Journeys = [
     {
         id: 1,
         date: "September 2022",
-        des: "Started my Journey into the Tech space"
+        des: "Started my Journey in the Tech space"
     },
     {
         id: 2,
         date: "May 2023",
-        des: "Received my Certification in Responsive Web design"
+        des: "Received my Certification in Responsive Web design from freeCodeCamp"
     },
     {
         id: 3,
         date: "May 2023 - June 2024",
-        des: "I have ben practicing and improving myself"
+        des: "I have been practicing and improving myself"
     },
     {
         id: 4,
-        date: "July 2024 - till date",
+        date: "July 2024",
         des: "Began Intership as a developer with CHSG Tech USA."
     }
 ];
+
 export { ProjectList, TechList, Journeys };
