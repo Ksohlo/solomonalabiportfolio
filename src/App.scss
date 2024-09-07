@@ -17,6 +17,9 @@ html, body{
     overflow-x: hidden;
     width: 100%;
 }
+body{
+ overflow: hidden;   
+}
 html::-webkit-scrollbar{
     display: none;
 }

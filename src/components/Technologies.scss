@@ -37,16 +37,16 @@ $bg2: rgb(24, 21, 43);
 .techElements{
     width: 93%;
     margin: 30px auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     align-items: center;
 }
 .tech{
     width: 400px;
     height:200px;
-    margin: 40px 0;
+    margin: 40px 2px;
 }
 .tech i{
     font-size: 4rem;
@@ -72,13 +72,13 @@ $bg2: rgb(24, 21, 43);
         height: auto;
     }
     .technology h1{
-        font-size: 3rem;
+        font-size: 2rem;
         padding-left: 10px;
     }
     .sub{
         margin: 10px 10px;
         width: 300px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .techElements{
         flex-direction: column;
@@ -93,10 +93,10 @@ $bg2: rgb(24, 21, 43);
         margin: 10px 0;
     }
     .tech h3{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
     .tech p{
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         margin: 10px 0;
     }
 }

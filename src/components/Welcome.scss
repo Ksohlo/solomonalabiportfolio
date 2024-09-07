@@ -18,13 +18,13 @@ $bg2: rgb(24, 21, 43);
     object-fit: cover;
     filter: brightness(0.5);
 }
-.welcomeLeft{
-    width: 70%;
-    margin-top: 40px;
-    position: absolute;
-    top: 130px;
-    left: 100px;
-}
+// .welcomeLeft{
+//     // width: 70%;
+//     margin-top: 40px;
+//     // position: absolute;
+//     // top: 130px;
+//     // left: 100px;
+// }
 
 .welcomeLeft h1{
     background: linear-gradient(80deg, $white, $bg2);

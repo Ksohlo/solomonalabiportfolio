@@ -1,19 +1,44 @@
 import './Projects.scss'
-import toDo from '../assets/toDo.png'
 import { Link } from 'react-router-dom'
-import gpcalc from '../assets/GPCalculator.png'
-import weather from '../assets/weather.png'
-import flowbank from '../assets/FlowBank1.png'
-import flowbank2 from '../assets/flowbank.png'
+import {ProjectList} from '../data';
 
 
 const Project = ()=>{
     return(
         <>
             <div className="projectBody">
-                <h1>Projects I've Worked On</h1>
+                <h1>Projects</h1>
 
-                <div className="projects">
+                <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+                    {ProjectList.map((project, index)=>{
+                        return(
+                            <div key={index} className='shadow-sm rounded-md shadow-white'>
+                                <div className="img rel">
+                                    <img src={project.image} className='hover:scale-105'/>
+                                </div>
+                                <div className="text">
+                                    <h2 className='font-semibold'>
+                                        {project.name}
+                                    </h2>
+                                    <div className="color" />
+                                    <p>{project.des}</p>
+                                    <h3>Stack</h3>
+                                    <p className='text-orange-500 font-semibold'>
+                                        {project.stack}
+                                    </p>
+                                </div>
+
+                                <div className="btn w-full mb-5 py-2 flex justify-around items-center">
+                                    <Link className='block px-2' to={project.link.live}>Live</Link>
+                                    <Link className='block px-2' to={project.link.code}>Code</Link>
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+                
+
+                {/* <div className="projects">
                     <div className="projectElement">
                         <div className="img">
                             <img src={toDo}/>
@@ -98,7 +123,7 @@ const Project = ()=>{
                             <Link to={'https://github.com/Ksohlo/Flow_Bank'}>Code</Link>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )
