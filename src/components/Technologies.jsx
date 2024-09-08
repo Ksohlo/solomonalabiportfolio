@@ -1,5 +1,6 @@
 import './Technologies.scss'
 import { TechList } from '../data'
+import { Fade } from 'react-awesome-reveal'
 
 const Technologies = ()=>{
     return(
@@ -7,15 +8,17 @@ const Technologies = ()=>{
             <div className="technology">
                 <div className='col' />
                 <h1 className='text-lg text-white'>Technologies</h1>
-                <p className='sub'>So far i have worked with a range of  different Technologies in the Web development ecosytem</p>
+                <p className='sub text-justify'>So far i have worked with a range of  different Technologies in the Web development ecosytem</p>
                 <div className="techElements grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {TechList.map((item, index)=>{
                         return(
+                            <Fade direction='up' delay={index * 100} triggerOnce>
                             <div className="tech" key={index}>
                                 <i className={item.ico}></i>
                                 <h3>{item.name}</h3>
-                                <p>{item.des}</p>
+                                <p >{item.des}</p>
                             </div>
+                            </Fade>
                         )
                     })}
                     {/* <div className="tech">

@@ -1,6 +1,7 @@
 import './Projects.scss'
 import { Link } from 'react-router-dom'
 import {ProjectList} from '../data';
+import { Fade } from 'react-awesome-reveal';
 
 
 const Project = ()=>{
@@ -12,8 +13,9 @@ const Project = ()=>{
                 <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
                     {ProjectList.map((project, index)=>{
                         return(
-                            <div key={index} className='shadow-sm rounded-md shadow-white'>
-                                <div className="img rel">
+                            <Fade direction='up' delay={index * 200} damping={0.1} triggerOnce>
+                            <div key={index} className='shadow-sm h-auto rounded-md shadow-white'>
+                                <div className="img">
                                     <img src={project.image} className='hover:scale-105'/>
                                 </div>
                                 <div className="text">
@@ -33,6 +35,7 @@ const Project = ()=>{
                                     <Link className='block px-2' to={project.link.code}>Code</Link>
                                 </div>
                             </div>
+                            </Fade>
                         )
                     })}
                 </div>

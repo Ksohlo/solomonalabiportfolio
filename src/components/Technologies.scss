@@ -49,25 +49,25 @@ $bg2: rgb(24, 21, 43);
     margin: 40px 2px;
 }
 .tech i{
-    font-size: 4rem;
+    font-size: 3rem;
     color: $orange;
     margin: 20px 0;
 }
 .tech h3{
     color: $ash;
-    font-size: 2rem;
+    font-size: 1.4rem;
     width: 250px;
 }
 .tech p{
     color: $ash;
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 280px;
     margin: 20px 0px;
 }
 
 
-@media (max-width:700px) {
+@media (max-width:600px) {
     .technology{
         height: auto;
     }
@@ -96,7 +96,7 @@ $bg2: rgb(24, 21, 43);
         font-size: 1.4rem;
     }
     .tech p{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin: 10px 0;
     }
 }

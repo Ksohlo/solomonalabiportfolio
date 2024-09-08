@@ -6,16 +6,16 @@ $bg: rgb(2, 0, 12);
 $bg2: rgb(24, 21, 43);
 
 
-.navbar{
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    background-color: $bg;
-}
+// .navbar{
+//     width: 100%;
+//     height: 15vh;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px 40px;
+//     background-color: $bg;
+// }
 .logo{
     color: $ash;
     font-size: 18px;
@@ -31,6 +31,7 @@ $bg2: rgb(24, 21, 43);
     width: 300px;
     display: flex;
     justify-content: space-between;
+    margin-right: 4rem;
 }
 .navbar ul li{
     list-style: none;
@@ -67,10 +68,10 @@ $bg2: rgb(24, 21, 43);
 }
 
 @media (max-width:700px) {
-    .navbar{
-        padding: 10px 20px;
-        align-items: flex-start;
-    }
+    // .navbar{
+    //     padding: 10px 20px;
+    //     align-items: flex-start;
+    // }
     .logo{
         width: 150px;
     }
@@ -80,6 +81,8 @@ $bg2: rgb(24, 21, 43);
         top: 60px;
         left: 22%;
         font-size: .9rem;
+        margin-right: 0;
+        margin: 0 auto;
     }
     .navbar ul li{
         font-size: 15px;

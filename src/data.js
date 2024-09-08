@@ -104,7 +104,7 @@ const TechList =[
         id: 9,
         name: "MongoDB",
         ico: "bx bxl-mongodb",
-        des: `Experience with MongoDB for non relational Database management.`
+        des: `Experience with mongoDB for non relational Database management.`
     },
     
 ];
