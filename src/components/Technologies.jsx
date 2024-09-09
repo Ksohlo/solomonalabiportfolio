@@ -1,11 +1,16 @@
 import './Technologies.scss'
 import { TechList } from '../data'
 import { Fade } from 'react-awesome-reveal'
+import {motion} from "framer-motion"
 
 const Technologies = ()=>{
     return(
         <>
-            <div className="technology">
+            <motion.div 
+                initial={{opacity:0}}
+                animate={{opacity:1}}
+                transition={{delay:1.3, duration:1}}
+                className="technology">
                 <div className='col' />
                 <h1 className='text-lg text-white'>Technologies</h1>
                 <p className='sub text-justify'>So far i have worked with a range of  different Technologies in the Web development ecosytem</p>
@@ -43,7 +48,7 @@ const Technologies = ()=>{
                     </div> */}
                 </div>
                 
-            </div>
+            </motion.div>
         </>
     )
 }
