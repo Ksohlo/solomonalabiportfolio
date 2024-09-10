@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Nav = ()=>{
     return(
         <>
-        <nav className="navbar bg-dark min-h-28 lg:min-h-20 h-auto w-full py-4 flex flex-col lg:flex-row items-center justify-between">
+        <nav className="navbar bg-dark min-h-28 lg:min-h-20 h-auto w-full py-4 flex flex-col lg:flex-row items-center justify-between z-50">
             <div className='flex flex-row items-center justify-between w-full lg:w-6/12 px-3 lg:ml-8'>
                 <Link to="/" className="logo">
                     <i className='bx bx-code-alt'></i> 

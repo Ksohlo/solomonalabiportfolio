@@ -20,7 +20,7 @@ const Welcome = ()=>{
     useEffect(() => {
         setTimeout(() => {
             setPreloader(false);
-        }, 1500);
+        }, 2000);
     })
     return(
         <>
@@ -30,7 +30,7 @@ const Welcome = ()=>{
                 <Fade direction='left' triggerOnce={true} delay={0.3} duration={1500}>
                     <div className=" pl-10 lg:pb-10 w-full">
                         <h1 className='text-white text-3xl lg:text-5xl font-semibold leading-10'>Hi there 👋, <br /> I'm Solomon</h1>
-                        <p className='text-white my-4 font-extralight pr-10 w-full lg:pr-0'> A Full Stack Developer with affinity for creating engaging and intuitive user, interfaces and reliable server side applications. <br /> Proven expertise in leveraging React.js, Express.js MongoDB and Node.js to build responsive web applications with a focus on a good user experience.</p>
+                        <p className='text-white my-4 font-extralight pr-10 w-full lg:pr-0'> A Full Stack Developer with affinity for creating engaging and intuitive user interfaces and reliable server side applications. <br /> Proven expertise in leveraging React.js, Express.js MongoDB and Node.js to build responsive web applications with a focus on a good user experience.</p>
                         <div className="icons">
                             <Link to={'https://github.com/Ksohlo'}><i className='bx bxl-github'></i></Link>
                             <Link to={'https://www.linkedin.com/in/k-sohlo/'}><i className='bx bxl-linkedin-square' ></i></Link>
