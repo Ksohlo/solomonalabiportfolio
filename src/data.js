@@ -128,7 +128,7 @@ const Journeys = [
     {
         id: 4,
         date: "July 2024",
-        des: "Began Intership as a developer with CHSG Tech USA."
+        des: "Began Internship as a developer with CHSG Tech USA."
     }
 ];
 
