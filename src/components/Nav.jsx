@@ -29,9 +29,9 @@ const Nav = ()=>{
                         <Link to="/about" ><li>About</li></Link>
                 </ul>
                 {show && <div className='md:hidden flex flex-col md:flex-row md:mr-0 gap-10 p-8 md:p-0 text-white abolute top-10 left-0 bg-dark md:bg-transparent w-full z-30 md:z-0'>
-                        <Link to="/project" onClick={() => {!setShow}}>Project</Link>
-                        <Link to="/technologies" onClick={() => {!setShow}}>Technologies</Link>
-                        <Link to="/about" onClick={() => {!setShow}}>About</Link>
+                        <Link to="/project" onClick={() => {setShow(!show)}}>Project</Link>
+                        <Link to="/technologies" onClick={() => {setShow(!show)}}>Technologies</Link>
+                        <Link to="/about" onClick={() => {setShow(!show)}}>About</Link>
                 </div>}
 
         </nav>
