@@ -12,7 +12,7 @@ const Nav = ()=>{
         <>
         <nav className="navbar bg-dark h-20 lg:min-h-10 w-full py-4 flex flex-col lg:flex-row items-center justify-between md:px-20 z-50">
             <div className='flex flex-row items-center justify-between w-full lg:w-6/12 px-3'>
-                <Link to="/" className="logo">
+                <Link to="/" className="logo" onClick={() => {setShow(!show)}}>
                     <i className='bx bx-code-alt'></i> 
                     Solomon Alabi
                 </Link>
