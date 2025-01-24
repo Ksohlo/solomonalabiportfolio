@@ -43,11 +43,11 @@ $bg2: rgb(24, 21, 43);
 //     justify-content: space-between;
 //     align-items: center;
 }
-.tech{
-    width: 400px;
-    height:200px;
-    margin: 40px 2px;
-}
+// .tech{
+//     width: 400px;
+//     height:200px;
+//     margin: 40px 2px;
+// }
 .tech i{
     font-size: 3rem;
     color: $orange;
@@ -67,7 +67,7 @@ $bg2: rgb(24, 21, 43);
     color: $ash;
     font-weight: 100;
     font-size: 1.3rem;
-    width: 280px;
+    max-width: 280px;
     margin: 20px 0px;
 }
 

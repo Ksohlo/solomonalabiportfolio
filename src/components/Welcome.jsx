@@ -14,9 +14,7 @@ import Preloader from './Preloader.jsx';
 
 
 const Welcome = ()=>{
-
     const [preloader, setPreloader] = useState(true);
-
     useEffect(() => {
         setTimeout(() => {
             setPreloader(false);

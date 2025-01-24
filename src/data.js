@@ -6,28 +6,6 @@ import img4 from "./assets/projects/oko.png";
 const ProjectList = [
     {
         id: 1,
-        image: img1,
-        name: "Addre",
-        des: "An RFID Management system for adding, tracking and managing attendance, and student details.",
-        stack: " MongoDB,   Express,   React,   Node",
-        link: {
-            live: "https://addre.pages.dev/",
-            code: "https://github.com/Ksohlo/Addre"
-        } 
-    },
-    {
-        id: 2,
-        image: img2,
-        name: "Project Pulse",
-        des: "A Repository Store for uploading, downloading, and storing of Final Year thesis for students.",
-        stack: "MongoDB,   Express,   React,   Node",
-        link: {
-            live: "https://projectpulse.pages.dev/",
-            code: "https://github.com/AOTRA68/projectPulse"
-        } 
-    },
-    {
-        id: 3,
         image: img3,
         name: "Techpye",
         des: "An Advanced LMS for online courses like Software development, Data analysis",
@@ -38,7 +16,7 @@ const ProjectList = [
         } 
     },
     {
-        id: 4,
+        id: 2,
         image: img4,
         name: "Tributetookorafor",
         des: "A tribute website for accepting condolences and acknowledging tributes.",
@@ -46,6 +24,28 @@ const ProjectList = [
         link: {
             live: "https://tributetookorafor.com/",
             code: "https://github.com/CHSGI/Tributetookorafor"
+        } 
+    },
+    {
+        id: 3,
+        image: img2,
+        name: "Project Pulse",
+        des: "A Repository Store for uploading, downloading, and storing of Final Year thesis for students.",
+        stack: "MongoDB,   Express,   React,   Node",
+        link: {
+            live: "https://projectpulse.pages.dev/",
+            code: "https://github.com/AOTRA68/projectPulse"
+        } 
+    },
+    {
+        id: 4,
+        image: img1,
+        name: "Addre",
+        des: "An RFID Management system for adding, tracking and managing attendance, and student details.",
+        stack: " MongoDB,   Express,   React,   Node",
+        link: {
+            live: "https://addre.pages.dev/",
+            code: "https://github.com/Ksohlo/Addre"
         } 
     },
 ];
@@ -150,8 +150,8 @@ const Journeys = [
     },
     {
         id: 5,
-        date: "January 2025",
-        des: "Began Team lead and Mobile developer with LOEM Health Insurance."
+        date: "October 2024",
+        des: "Became Team lead and Mobile developer with LOEM Health Insurance."
     }
 ];
 

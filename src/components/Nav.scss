@@ -27,24 +27,24 @@ $bg2: rgb(24, 21, 43);
 .logo i{
     font-size: 23px;
 }
-.navbar ul{
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 4rem;
-}
-.navbar ul li{
-    list-style: none;
-    font-size: 18px;
-}
-.navbar ul>a{
-    color: $ash;
-    text-decoration: none;
-    transition: .3s;
-}
-.navbar ul>a:hover{
-    color: $orange;
-}
+// .navbar ul{
+//     width: 300px;
+//     display: flex;
+//     justify-content: space-between;
+//     margin-right: 4rem;
+// }
+// .navbar ul li{
+//     list-style: none;
+//     font-size: 18px;
+// }
+// .navbar ul>a{
+//     color: $ash;
+//     text-decoration: none;
+//     transition: .3s;
+// }
+// .navbar ul>a:hover{
+//     color: $orange;
+// }
 .icons{
     width: 140px;
     display: flex;
