@@ -2,6 +2,9 @@ import './Technologies.scss'
 import { TechList } from '../data'
 import { Fade } from 'react-awesome-reveal'
 import {motion} from "framer-motion"
+import { SiPostgresql } from "react-icons/si";
+import { GrCycle } from "react-icons/gr";
+import { SiReactquery, SiNextdotjs } from "react-icons/si";
 
 const Technologies = ()=>{
     return(
@@ -19,6 +22,10 @@ const Technologies = ()=>{
                         return(
                             <Fade direction='up' delay={index * 100} triggerOnce>
                             <div className="tech" key={index}>
+                                {item.ico === 'SiPostgresql' && <SiPostgresql className='ico' />}
+                                {item.ico === 'zustand' && <GrCycle className='ico' />}
+                                {item.ico === 'query' && <SiReactquery className='ico' />}
+                                {item.ico === 'next' && <SiNextdotjs className='ico' />}
                                 <i className={item.ico}></i>
                                 <h3>{item.name}</h3>
                                 <p >{item.des}</p>

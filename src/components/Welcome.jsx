@@ -22,9 +22,11 @@ const Welcome = ()=>{
             setPreloader(false);
         }, 2000);
     })
+    if (preloader) {
+        return <Preloader />
+    }
     return(
         <>
-            {preloader && <Preloader />}
             <div>
                 <div className="welcome bg-gradient-to-br from-dark via-zinc-800 to-amber-400 flex flex-row items-center lg:items-end justify-center lg:justify-between ">
                 <Fade direction='left' triggerOnce={true} delay={0.3} duration={1500}>

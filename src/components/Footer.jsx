@@ -8,12 +8,12 @@ const Footer = ()=>{
         <>
         <div className="footer">
             <div className="contacts">
-                <Fade direction='right' triggerOnce>
+                {/* <Fade direction='right' triggerOnce>
                 <div className="con">
                     <h5>Call</h5>
                     <Link to={'tel:+2348026865926'}>+2348026865926</Link>
                 </div>
-                </Fade>
+                </Fade> */}
                 <Fade direction='right' triggerOnce delay={0.5}>
                 <div className="con">
                     <h5>E-mail</h5>
@@ -27,8 +27,8 @@ const Footer = ()=>{
                 </Fade>
                 <div className="icons">
                         <Fade direction='up' duration={4000} delay={4} triggerOnce><Link to={'https://github.com/Ksohlo'}><i className='bx bxl-github'></i></Link></Fade>
-                        <Fade direction='up' duration={4000} delay={5} triggerOnce><Link to={'https://www.linkedin.com/in/k-sohlo/'}><i className='bx bxl-linkedin-square' ></i></Link></Fade>
-                        <Fade direction='up' duration={4000}   delay={6} triggerOnce><Link to={'https://twitter.com/ALABISo71513241'}> <img src={twitterX}></img> </Link></Fade>
+                        <Fade direction='up' duration={4000} delay={6} triggerOnce><Link to={'https://www.linkedin.com/in/k-sohlo/'}><i className='bx bxl-linkedin-square' ></i></Link></Fade>
+                        <Fade direction='up' duration={4000}   delay={8} triggerOnce><Link to={'https://twitter.com/ALABISo71513241'}> <img src={twitterX}></img> </Link></Fade>
                     </div>
             </div>
         </div>

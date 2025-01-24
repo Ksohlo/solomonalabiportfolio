@@ -9,9 +9,9 @@ const About = ()=>{
             <div className="about">
                 <Fade>
                 <h1 className='mt-8'>About Me</h1>
-                <p className='des'><span className='font-light'>Alabi Solomon</span> <br /> <span className='font-light text-justify'>Electrical Engineering Graduate | Full Stack Developer (MERN Stack)</span> <br /> <br />
+                <p className='des'><span className='font-light'>Alabi Solomon</span> <br /> <span className='font-light text-justify'>Electrical Engineering Graduate | <span className='text-yellow-500 font-medium'>Full Stack Developer (MERN / PERN Stack)</span> </span> <br /> <br />
                     <span className=' text-justify'>
-                        I am a dedicated Electrical Engineering graduate from OOU College of Engineering with a passion for technology and problem-solving. In addition to my engineering background, I have honed my skills as a Full Stack Developer, specializing in the MERN stack (MongoDB, Express.js, React.js, and Node.js). My expertise spans across both front-end and back-end development, allowing me to build robust, scalable, and user-friendly web applications. I am committed to leveraging my technical skills and engineering mindset to deliver innovative solutions.
+                        I am a dedicated Electrical Engineering graduate with a passion for technology and problem-solving. In addition to my engineering background, I have honed my skills as a Full Stack Developer, specializing in the MERN / PERN stack (MongoDB / PostgreSQL, Express.js, React.js, Next JS, and Node.js). My expertise spans across both front-end and back-end development, allowing me to build robust, scalable, and user-friendly web applications. I am committed to leveraging my technical skills and engineering mindset to deliver innovative solutions.
                     </span>
                    
                 </p>
