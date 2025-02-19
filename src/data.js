@@ -66,63 +66,75 @@ const TechList =[
     },
     {
         id: 3,
+        name: "Typescipt",
+        ico: "bx bxl-typescript",
+        des: "Experience with Typesciptfor type safe queries and scalable codes"
+    },
+    {
+        id: 4,
         name: "Saas",
         ico: "bx bxl-sass",
         des: "Experience with Sass css a preprocessor css library"
     },
     {
-        id: 4,
+        id: 5,
         name: "Tailwind",
         ico: "bx bxl-tailwind-css",
         des: "Experience with tailwind for responsive design."
     },
     {
-        id: 5,
+        id: 6,
         name: "React JS",
         ico: "bx bxl-react",
         des: "Experience with React.JS and React components and states."
     },
     {
-        id: 6,
-        name: "React Native",
+        id: 7,
+        name: "React Native (expo)",
         ico: "bx bxl-react",
-        des: "Experience with React Native for cross platform mobile developement."
+        des: "Experience with React Native and expo cli for cross platform native mobile developement."
     },
     {
-        id: 7,
+        id: 8,
         name: "Zustand",
         ico: "zustand",
         des: `Experience with Zustand for state management.`
     },
     {
-        id: 8,
+        id: 9,
         name: "Next JS",
         ico: "next",
         des: `Experience with Next Js for Fullstack developement and server side rendering...`
     },
     {
-        id: 9,
+        id: 10,
         name: "Express JS",
         ico: "bx bx-server",
         des: `Experience with Express JS for server side app development.`
     },
     {
-        id: 10,
+        id: 11,
         name: "MongoDB",
         ico: "bx bxl-mongodb",
         des: `Experience with mongoDB for non relational Database management.`
     },
     {
-        id: 11,
+        id: 12,
         name: "SQL DB",
         ico: "SiPostgresql",
         des: `Experience with sql based database like Postgresql, mysql...`
     },
     {
-        id: 12,
+        id: 13,
         name: "React Query",
         ico: "query",
         des: `Experience with React query now Tanstack query for querying apis & caching data.`
+    },
+    {
+        id: 14,
+        name: "AWS",
+        ico: "bx bxl-aws",
+        des: `Experience with AWS s3 bucket, E-beanstalk etc.`
     },
     
 ];
@@ -130,7 +142,7 @@ const TechList =[
 const Journeys = [
     {
         id: 1,
-        date: "September 2022",
+        date: "September 2021",
         des: "Started my Journey in the Tech space"
     },
     {

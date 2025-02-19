@@ -36,6 +36,9 @@ const Welcome = ()=>{
                             <Link to={'https://www.linkedin.com/in/k-sohlo/'}><i className='bx bxl-linkedin-square' ></i></Link>
                             <Link to={'https://twitter.com/ALABISo71513241'}> <img src={twitterX}></img> </Link>
                         </div>
+                        <a href='https://drive.google.com/uc?export=download&id=1pxkwarnp_toKeURCVsCCRDJGgbuH0ezI' className='bg-black w-max cursor-pointer text-yellow-500 text-base font-light my-2 flex gap-2 items-center p-3 rounded-md shadow-lg hover:shadow-neutral-600 duration-1000'>
+                            Download Resume <i class='bx bxs-file'></i>
+                        </a>
                         <div className="ccolor" />
                     </div>
                 </Fade>

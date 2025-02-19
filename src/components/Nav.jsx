@@ -19,7 +19,7 @@ const Nav = ()=>{
                 <div className="icons hidden md:flex">
                     <Link to={'https://github.com/Ksohlo'}><i className='bx bxl-github'></i></Link>
                     <Link to={'https://www.linkedin.com/in/k-sohlo/'}><i className='bx bxl-linkedin-square' ></i></Link>
-                    <Link to={'https://twitter.com/ALABISo71513241'}> <img src={twitterX}></img> </Link>
+                    <Link to={'https://twitter.com/ALABISo71513241'}> <img src={twitterX}></img></Link>
                 </div>
                 <GiHamburgerMenu className='text-white md:hidden mr-2 mt-2 text-3xl' onClick={() => {setShow(!show)}} />
             </div>
