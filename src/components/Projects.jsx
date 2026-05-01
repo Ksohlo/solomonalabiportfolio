@@ -1,47 +1,89 @@
-import './Projects.scss'
-import { Link } from 'react-router-dom'
-import {ProjectList} from '../data';
-import { Fade } from 'react-awesome-reveal';
+import "./Projects.scss";
+import { Link } from "react-router-dom";
+import { ProjectList } from "../data";
+import { Fade } from "react-awesome-reveal";
+import { FaAppStoreIos } from "react-icons/fa";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
+const Project = () => {
+  return (
+    <>
+      <div className="projectBody">
+        <h1>Projects</h1>
 
-const Project = ()=>{
-    return(
-        <>
-            <div className="projectBody">
-                <h1>Projects</h1>
-
-                <div className=' grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-                    {ProjectList.map((project, index)=>{
-                        return(
-                            <Fade direction='up' delay={index * 200} damping={0.1} triggerOnce>
-                            <div key={index} className='shadow-sm h-auto rounded-md shadow-white'>
-                                <div className="img">
-                                    <img src={project.image} className='hover:scale-105'/>
-                                </div>
-                                <div className="text">
-                                    <h2 className='font-semibold'>
-                                        {project.name}
-                                    </h2>
-                                    <div className="color" />
-                                    <p>{project.des}</p>
-                                    <h3>Stack</h3>
-                                    <p className='text-orange-500 font-semibold'>
-                                        {project.stack}
-                                    </p>
-                                </div>
-
-                                <div className="btn w-full mb-5 py-2 flex justify-around items-center">
-                                    <Link className='block px-2' to={project.link.live}>Live</Link>
-                                    <Link className='block px-2' to={project.link.code}>Code</Link>
-                                </div>
-                            </div>
-                            </Fade>
-                        )
-                    })}
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {ProjectList.map((project, index) => {
+            return (
+              <Fade
+                direction="up"
+                delay={index * 200}
+                damping={0.1}
+                triggerOnce
+              >
+                <div
+                  key={index}
+                  className="shadow-sm h-auto rounded-md shadow-white"
+                >
+                  <div className="img">
+                    <img src={project.image} className="hover:scale-105" />
+                  </div>
+                  <div className="text">
+                    <h2 className="font-semibold">{project.name}</h2>
+                    <div className="color" />
+                    <p>{project.des}</p>
+                    <h3>Stack</h3>
+                    <p className="text-orange-500 font-semibold">
+                      {project.stack}
+                    </p>
+                  </div>
+                  <>
+                    {/* web view  */}
+                    {project.type === "WEB" ? (
+                      <div className="btn w-full mb-5 py-2 flex justify-around items-center">
+                        <Link className="block px-2" to={project.link.live}>
+                          Live
+                        </Link>
+                        <Link className="block px-2" to={project.link.code}>
+                          Code
+                        </Link>
+                      </div>
+                    ) : (
+                      // app view
+                      <div className="p-3">
+                        <div className="grid grid-cols-2 gap-4 mt-4">
+                          <div>
+                            <Link
+                              to={project.appLink.android}
+                              className="block w-max mx-auto"
+                            >
+                              <IoLogoGooglePlaystore
+                                size={30}
+                                className="text-yellow-500"
+                              />
+                            </Link>
+                          </div>
+                          <div>
+                            <Link
+                              to={project.appLink.ios}
+                              className="block w-full"
+                            >
+                              <FaAppStoreIos
+                                size={30}
+                                className="text-yellow-500"
+                              />
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    )}{" "}
+                  </>
                 </div>
-                
+              </Fade>
+            );
+          })}
+        </div>
 
-                {/* <div className="projects">
+        {/* <div className="projects">
                     <div className="projectElement">
                         <div className="img">
                             <img src={toDo}/>
@@ -127,9 +169,9 @@ const Project = ()=>{
                         </div>
                     </div>
                 </div> */}
-            </div>
-        </>
-    )
-}
+      </div>
+    </>
+  );
+};
 
-export default Project
+export default Project;
