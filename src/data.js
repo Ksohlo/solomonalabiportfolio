@@ -1,16 +1,69 @@
+import profileImg from "./assets/img.png";
 import img1 from "./assets/projects/addre.png";
 import img2 from "./assets/projects/pp.png";
 import img3 from "./assets/projects/techpye.jpg";
-import img4 from "./assets/projects/oko.png";
+import img4 from "./assets/projects/furnish.png";
 
-const ProjectList = [
+// export interface PersonalInfo {
+//   name: string;
+//   title: string;
+//   email: string;
+//   phone: string;
+//   location: string;
+//   profileImage: string;
+//   resumeUrl: string;
+//   socials: {
+//     github: string;
+//     linkedin: string;
+//     twitter: string;
+//   };
+// }
+
+export const personalInfo = {
+  name: "Solomon Alabi",
+  title: "Senior Full Stack & Mobile Engineer",
+  email: "alabisolomon@outlook.com",
+  phone: "+2348026865926",
+  location: "Remote / Worldwide",
+  profileImage: profileImg,
+  resumeUrl: "https://drive.google.com/uc?export=download&id=1RtDgvbR4Z1-oaOnO4O6lxKJLk3WtJ8jT",
+  socials: {
+    github: "https://github.com/Ksohlo",
+    linkedin: "https://www.linkedin.com/in/k-sohlo/",
+    twitter: "https://twitter.com/ALABISo71513241",
+  },
+};
+
+// export interface ProjectItem {
+//   id: number;
+//   category: "all" | "web" | "app";
+//   image: string;
+//   name: string;
+//   tagline: string;
+//   des: string;
+//   stack: string[];
+//   link: {
+//     live: string;
+//     code: string;
+//   };
+//   type: "WEB" | "APP";
+//   appLink: {
+//     android: string;
+//     ios: string;
+//   };
+//   highlights?: string[];
+// }
+
+export const ProjectList = [
   {
     id: 1,
+    category: "app",
     image:
       "https://play-lh.googleusercontent.com/h9EjcgKPcBWNS1H46tuxsOFbQVyrlZxrpRIAXOZi1dqlykVCcq0TOun7gJ_a_QpZzwZy2Nc94_mPHWCdk_nEOoE=w240-h480-rw",
-    name: "Air Force Alumni App",
-    des: "A social app for NAF Alumni to connect and share memories, events, and achievements and donate back to support the school.",
-    stack: " React Native, Expo, Firebase, EAS",
+    name: "Air Force Alumni Mobile App",
+    tagline: "Community & Alumni Engagement Platform",
+    des: "A cross-platform mobile app for NAF Alumni to connect, share memories, track events, celebrate achievements, and facilitate secure donations.",
+    stack: ["React Native", "Expo", "Firebase", "EAS Build", "Tailwind CSS"],
     link: {
       live: "",
       code: "",
@@ -20,29 +73,43 @@ const ProjectList = [
       android: "https://play.google.com/store/apps/details?id=com.CHSG.AFSS",
       ios: "https://apps.apple.com/ng/app/afss-kaduna-alumni/id6753322024",
     },
+    highlights: [
+      "Cross-platform iOS & Android distribution via Expo EAS",
+      "Realtime messaging and newsfeed powered by Firebase",
+      "Integrated donation payment gateways and member verification",
+    ],
   },
   {
     id: 2,
+    category: "app",
     image: "https://sayemtransportlogistics.com/assets/img/favicon.png",
     name: "Sayem Route App",
-    des: "A Ride hailing app for fast and efficient transportation across the world importing and exporting goods and products with instant payment gateway",
-    stack: " React Native, Expo, Firebase, EAS, Payaza",
+    tagline: "Global Ride-Hailing & Logistics Mobile Solution",
+    des: "A ride-hailing and parcel logistics mobile application enabling seamless international transport, instant booking dispatch, and automated payment gateways.",
+    stack: ["React Native", "Expo CLI", "Firebase", "Payaza Gateway", "EAS"],
     link: {
       live: "",
       code: "",
     },
     type: "APP",
     appLink: {
-      android: "",
-      ios: "",
+      android: "https://play.google.com/store/apps/details?id=com.chsg.sayemroute",
+      ios: "https://apps.apple.com/us/app/sayem-route/id6765875582",
     },
+    highlights: [
+      "Realtime geolocation tracking & automated route calculation",
+      "Multi-currency instant payment checkout via Payaza SDK",
+      "High performance mobile state management",
+    ],
   },
   {
     id: 3,
+    category: "web",
     image: "https://admin.afcskdalumni.com/logo.svg",
-    name: "AFSS Kaduna alumni Admin dashboard",
-    des: "An Admin dashboard for managing the flow of data and interactions for the AFSS Kaduna Alumni app",
-    stack: " React, Tanstack Query, Tailbits UI",
+    name: "AFSS Alumni Admin Portal",
+    tagline: "Enterprise Data & Operations Management Dashboard",
+    des: "An intuitive enterprise admin console engineered for full data management, user verification, financial audit logs, and push notification moderation for AFSS Kaduna Alumni.",
+    stack: ["React.js", "Tanstack Query", "Tailwind CSS", "RESTful API"],
     link: {
       live: "https://admin.afcskdalumni.com",
       code: "",
@@ -52,13 +119,43 @@ const ProjectList = [
       android: "",
       ios: "",
     },
+    highlights: [
+      "Optimized query caching and pagination with Tanstack React Query",
+      "Role-based access control (RBAC) and security token management",
+      "Data export engines and real-time activity audit log",
+    ],
   },
   {
     id: 4,
+    category: "web",
+    image: img4,
+    name: "FirstChoice Super Store",
+    tagline: "E-Commerce Suite with Custom CMS & Payment Gateway",
+    des: "Full-scale modern e-commerce platform built with Next.js, incorporating a custom administrative CMS, inventory management, dynamic cart, and secure online payments.",
+    stack: ["Next.js", "Prisma ORM", "Express.js", "Node.js", "Tailwind CSS"],
+    link: {
+      live: "https://firstchoicesupermart.com/",
+      code: "",
+    },
+    type: "WEB",
+    appLink: {
+      android: "",
+      ios: "",
+    },
+    highlights: [
+      "Server-side rendering (SSR) for ultra-fast SEO indexing",
+      "Custom relational schema with Prisma ORM and Node.js backend",
+      "Seamless payment gateway integration and instant invoice generation",
+    ],
+  },
+  {
+    id: 5,
+    category: "web",
     image: img3,
-    name: "Techpye",
-    des: "An Advanced LMS for online courses like Software development, Data analysis",
-    stack: " React, Express, PosgreSQL, S3",
+    name: "Techpye Learning Hub",
+    tagline: "Interactive EdTech & Software Engineering Academy",
+    des: "An advanced Learning Management System (LMS) hosting online video courses, student progress analytics, interactive code playgrounds, and automated certificates.",
+    stack: ["React.js", "Express.js", "PostgreSQL", "AWS S3", "Tailwind CSS"],
     link: {
       live: "https://techpye.com",
       code: "https://github.com/chsgi/techpye",
@@ -68,29 +165,20 @@ const ProjectList = [
       android: "",
       ios: "",
     },
-  },
-  {
-    id: 5,
-    image: img4,
-    name: "Tributetookorafor",
-    des: "A tribute website for accepting condolences and acknowledging tributes.",
-    stack: " React (SQL Express Node)",
-    link: {
-      live: "https://tributetookorafor.com/",
-      code: "https://github.com/CHSGI/Tributetookorafor",
-    },
-    type: "WEB",
-    appLink: {
-      android: "",
-      ios: "",
-    },
+    highlights: [
+      "AWS S3 integration for secure, fast video streaming and asset storage",
+      "PostgreSQL relational database architecture",
+      "Student interactive dashboard & milestone tracking",
+    ],
   },
   {
     id: 6,
+    category: "web",
     image: img2,
     name: "Project Pulse",
-    des: "A Repository Store for uploading, downloading, and storing of Final Year thesis for students.",
-    stack: "MongoDB,   Express,   React,   Node",
+    tagline: "Academic Research & Thesis Repository Engine",
+    des: "A centralized cloud store for indexing, publishing, and archiving undergraduate & postgraduate research papers with advanced search and preview functionality.",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js", "Tailwind CSS"],
     link: {
       live: "https://projectpulse.pages.dev/",
       code: "https://github.com/AOTRA68/projectPulse",
@@ -100,13 +188,20 @@ const ProjectList = [
       android: "",
       ios: "",
     },
+    highlights: [
+      "Full-text search indexing across research titles and document metadata",
+      "Document upload and PDF viewer integration",
+      "RESTful microservice architecture",
+    ],
   },
   {
     id: 7,
+    category: "web",
     image: img1,
-    name: "Addre",
-    des: "An RFID Management system for adding, tracking and managing attendance, and student details.",
-    stack: " MongoDB,   Express,   React,   Node",
+    name: "Addre RFID Attendance System",
+    tagline: "Hardware-Integrated Attendance & Identity Tracker",
+    des: "An IoT hardware and web-based RFID management system for automated attendance tracking, instant logging, student profiles, and analytical reporting.",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js", "IoT/RFID APIs"],
     link: {
       live: "https://addre.pages.dev/",
       code: "https://github.com/Ksohlo/Addre",
@@ -116,122 +211,149 @@ const ProjectList = [
       android: "",
       ios: "",
     },
+    highlights: [
+      "Hardware RFID card reader integration with realtime WebSockets",
+      "Automated attendance report generation in CSV/PDF",
+      "High scalability and sub-second attendance verification",
+    ],
   },
 ];
 
-const TechList = [
+export const TechCategories = [
+  { id: "all", label: "All Skills" },
+  { id: "frontend", label: "Frontend & Mobile" },
+  { id: "backend", label: "Backend & DB" },
+  { id: "cloud", label: "Cloud & Tools" },
+];
+
+// export interface TechItem {
+//   id: number;
+//   category: string;
+//   name: string;
+//   icon: string;
+//   badge: "Expert" | "Advanced" | "Intermediate";
+//   des: string;
+// }
+
+export const TechList = [
   {
     id: 1,
-    name: "Git (Version Control)",
-    ico: "bx bxl-git",
-    des: "Experience with Git and Github.",
+    category: "frontend",
+    name: "React.js / Next.js",
+    icon: "bx bxl-react",
+    badge: "Expert",
+    des: "Building high-performance SSR & SPA web applications with modern state management, SSR, ISR, and component architectures.",
   },
-  // {
-  //   id: 2,
-  //   name: "Javascript",
-  //   ico: "bx bxl-javascript",
-  //   des: "Experience with Javascript ES5, ES6 and ES7+.",
-  // },
+  {
+    id: 2,
+    category: "frontend",
+    name: "React Native (Expo)",
+    icon: "bx bxl-react",
+    badge: "Advanced",
+    des: "Cross-platform iOS and Android mobile engineering with native modules, Expo EAS builds, and push notification pipelines.",
+  },
   {
     id: 3,
-    name: "Typescipt",
-    ico: "bx bxl-typescript",
-    des: "Experience with Typesciptfor type safe queries and scalable codes",
+    category: "frontend",
+    name: "TypeScript",
+    icon: "bx bxl-typescript",
+    badge: "Advanced",
+    des: "Type-safe codebases, strict interfaces, generics, and seamless API contract enforcement for enterprise scale applications.",
   },
   {
     id: 4,
-    name: "Saas",
-    ico: "bx bxl-sass",
-    des: "Experience with Sass css a preprocessor css library",
+    category: "frontend",
+    name: "Tailwind CSS",
+    icon: "bx bxl-tailwind-css",
+    badge: "Expert",
+    des: "Utility-first design system crafting glassmorphic, responsive, high-class user interfaces with fine micro-interactions.",
   },
   {
     id: 5,
-    name: "Tailwind",
-    ico: "bx bxl-tailwind-css",
-    des: "Experience with tailwind for responsive design.",
+    category: "frontend",
+    name: "Zustand & Tanstack Query",
+    icon: "query",
+    badge: "Advanced",
+    des: "Atomic global state management, server-state caching, optimistic updates, and offline data persistence.",
   },
   {
     id: 6,
-    name: "React JS",
-    ico: "bx bxl-react",
-    des: "Experience with React.JS and React components and states.",
+    category: "backend",
+    name: "Node.js & Express.js",
+    icon: "bx bx-server",
+    badge: "Advanced",
+    des: "Designing scalable RESTful APIs, authentication middleware (JWT, OAuth), rate limiting, and microservice architectures.",
   },
   {
     id: 7,
-    name: "React Native (expo)",
-    ico: "bx bxl-react",
-    des: "Experience with React Native and expo cli for cross platform native mobile developement.",
+    category: "backend",
+    name: "PostgreSQL & SQL",
+    icon: "SiPostgresql",
+    badge: "Advanced",
+    des: "Relational database design, query optimization, indexing, foreign key constraints, and Prisma ORM integration.",
   },
   {
     id: 8,
-    name: "Zustand",
-    ico: "zustand",
-    des: `Experience with Zustand for state management.`,
+    category: "backend",
+    name: "MongoDB",
+    icon: "bx bxl-mongodb",
+    badge: "Advanced",
+    des: "NoSQL document modeling, aggregation pipelines, indexing strategies, and high-concurrency database management.",
   },
   {
     id: 9,
-    name: "Next JS",
-    ico: "next",
-    des: `Experience with Next Js for Fullstack developement and server side rendering...`,
+    category: "cloud",
+    name: "AWS (S3, Beanstalk)",
+    icon: "bx bxl-aws",
+    badge: "Intermediate",
+    des: "Cloud infrastructure setup, S3 bucket storage policies, EC2 deployment, Elastic Beanstalk hosting, and asset CDN.",
   },
   {
     id: 10,
-    name: "Express JS",
-    ico: "bx bx-server",
-    des: `Experience with Express JS for server side app development.`,
-  },
-  {
-    id: 11,
-    name: "MongoDB",
-    ico: "bx bxl-mongodb",
-    des: `Experience with mongoDB for non relational Database management.`,
-  },
-  {
-    id: 12,
-    name: "SQL DB",
-    ico: "SiPostgresql",
-    des: `Experience with sql based database like Postgresql, mysql...`,
-  },
-  {
-    id: 13,
-    name: "React Query",
-    ico: "query",
-    des: `Experience with React query now Tanstack query for querying apis & caching data.`,
-  },
-  {
-    id: 14,
-    name: "AWS",
-    ico: "bx bxl-aws",
-    des: `Experience with AWS s3 bucket, E-beanstalk etc.`,
+    category: "cloud",
+    name: "Git & GitHub Workflow",
+    icon: "bx bxl-git",
+    badge: "Expert",
+    des: "Version control mastery, feature branch strategy, CI/CD pipeline triggers, code reviews, and release management.",
   },
 ];
 
-const Journeys = [
+// export interface JourneyItem {
+//   id: number;
+//   date: string;
+//   title: string;
+//   des: string;
+// }
+
+export const Journeys = [
   {
     id: 1,
     date: "September 2021",
-    des: "Started my Journey in the Tech space",
+    title: "Inception & Core Fundamentals",
+    des: "Embarked on software engineering, mastering web algorithms, computer science principles, and JavaScript fundamentals.",
   },
   {
     id: 2,
     date: "May 2023",
-    des: "Received my Certification in Responsive Web design from freeCodeCamp",
+    title: "freeCodeCamp Professional Certification",
+    des: "Earned formal credentials in Responsive Web Design and Frontend Algorithms, building production web interfaces.",
   },
   {
     id: 3,
     date: "May 2023 - June 2024",
-    des: "I have been improving and collaborating with projects Online ",
+    title: "Open Source & Collaborative Development",
+    des: "Engineered full-stack solutions, contributing to repositories, developing backend APIs, and mastering React & Node architectures.",
   },
   {
     id: 4,
     date: "July 2024",
-    des: "Began Internship as a developer with CHSG Tech USA.",
+    title: "Software Engineer Intern at CHSG Tech USA",
+    des: "Joined CHSG Tech USA to build cross-platform mobile apps, enterprise dashboard tools, and scalable cloud integrations.",
   },
   {
     id: 5,
-    date: "October 2024",
-    des: "Became Team lead and Mobile developer with LOEM Health Insurance.",
+    date: "October 2024 - Present",
+    title: "Team Lead & Mobile Engineer at LOEM Health Insurance",
+    des: "Directing mobile application architecture, managing engineering workflows, and leading cross-functional teams building healthcare systems.",
   },
 ];
-
-export { ProjectList, TechList, Journeys };
