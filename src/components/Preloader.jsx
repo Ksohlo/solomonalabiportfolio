@@ -1,7 +1,12 @@
-import React from 'react';
+import React from "react";
 import { motion } from "framer-motion";
 import { SiNextdotjs, SiReactquery, SiExpress, SiExpo } from "react-icons/si";
-import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import {
+  BiCode,
+  BiCodeAlt,
+  BiLogoPostgresql,
+  BiLogoTypescript,
+} from "react-icons/bi";
 import { DiMongodb } from "react-icons/di";
 import { FaReact, FaAws } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -35,7 +40,7 @@ export default function Preloader() {
         <div className="relative flex items-center justify-center mb-8">
           <div className="w-24 h-24 rounded-full border-2 border-amber-500/20 border-t-amber-500 animate-spin-slow" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <i className="bx bx-code-alt text-4xl text-amber-400 animate-pulse"></i>
+            <BiCodeAlt className="text-4xl text-amber-400 animate-pulse" />
           </div>
         </div>
 

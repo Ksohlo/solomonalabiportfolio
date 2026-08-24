@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import twitterX from "../assets/twitterx.png";
 import { personalInfo } from "../data";
 import Project from "./Projects";
@@ -7,8 +7,21 @@ import Technologies from "./Technologies";
 import About from "./About.jsx";
 import Footer from "./Footer";
 import Preloader from "./Preloader.jsx";
-import { FaGithub, FaLinkedinIn, FaDownload, FaArrowRight, FaCopy, FaCheck } from "react-icons/fa";
-import { SiReact, SiNextdotjs, SiTypescript, SiPostgresql, SiExpo } from "react-icons/si";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaDownload,
+  FaArrowRight,
+  FaCopy,
+  FaCheck,
+} from "react-icons/fa";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiExpo,
+} from "react-icons/si";
 
 const roles = [
   "Senior Full Stack Engineer",
@@ -60,10 +73,8 @@ const Welcome = () => {
 
           {/* HERO SECTION */}
           <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
-            
             {/* Left Column: Intro Details */}
             <div className="w-full lg:w-7/12 flex flex-col items-start z-10">
-              
               {/* Availability Badge */}
               <motion.div
                 initial={{ opacity: 0, y: 15 }}
@@ -102,7 +113,8 @@ const Welcome = () => {
                     transition={{ duration: 0.4 }}
                     className="text-lg sm:text-xl font-semibold font-mono text-cyan-400 flex items-center gap-2"
                   >
-                    <span className="text-amber-500">&gt;</span> {roles[currentRoleIndex]}
+                    <span className="text-amber-500">&gt;</span>{" "}
+                    {roles[currentRoleIndex]}
                   </motion.div>
                 </AnimatePresence>
               </div>
@@ -114,7 +126,17 @@ const Welcome = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 className="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl font-light"
               >
-                Full Stack Software Engineer with a background in <span className="text-white font-medium">Electrical Engineering</span>. Specialized in crafting scalable web applications and high-performance cross-platform mobile apps leveraging <span className="text-amber-400 font-medium">React.js, Next.js, React Native, Node.js, Express, PostgreSQL & MongoDB</span>.
+                Full Stack Software Engineer with a background in{" "}
+                <span className="text-white font-medium">
+                  Electrical Engineering
+                </span>
+                . Specialized in crafting scalable web applications and
+                high-performance cross-platform mobile apps leveraging{" "}
+                <span className="text-amber-400 font-medium">
+                  React.js, Next.js, React Native, Node.js, Express, PostgreSQL
+                  & MongoDB
+                </span>
+                .
               </motion.p>
 
               {/* Action Buttons */}
@@ -146,7 +168,11 @@ const Welcome = () => {
                   className="px-4 py-3.5 rounded-full bg-slate-900/80 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 text-xs font-mono transition-all flex items-center gap-2"
                   title="Copy Email to Clipboard"
                 >
-                  {copied ? <FaCheck className="text-emerald-400" /> : <FaCopy />}
+                  {copied ? (
+                    <FaCheck className="text-emerald-400" />
+                  ) : (
+                    <FaCopy />
+                  )}
                   <span>{copied ? "Email Copied!" : "Copy Email"}</span>
                 </button>
               </motion.div>
@@ -159,7 +185,9 @@ const Welcome = () => {
                 className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-between gap-6 w-full max-w-xl"
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-xs uppercase font-mono text-slate-400 tracking-wider">Connect:</span>
+                  <span className="text-xs uppercase font-mono text-slate-400 tracking-wider">
+                    Connect:
+                  </span>
                   <a
                     href={personalInfo.socials.github}
                     target="_blank"
@@ -182,22 +210,42 @@ const Welcome = () => {
                     rel="noreferrer"
                     className="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-amber-400 hover:border-amber-500/50 transition-all hover:scale-110 p-2.5"
                   >
-                    <img src={twitterX} alt="X" className="w-full h-full object-contain filter invert opacity-80" />
+                    <img
+                      src={twitterX}
+                      alt="X"
+                      className="w-full h-full object-contain filter invert opacity-80"
+                    />
                   </a>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-mono text-slate-400 uppercase tracking-widest">Stack:</span>
+                  <span className="text-xs font-mono text-slate-400 uppercase tracking-widest">
+                    Stack:
+                  </span>
                   <div className="flex items-center gap-1.5 text-slate-400 text-lg">
-                    <SiReact className="hover:text-cyan-400 transition-colors" title="React" />
-                    <SiNextdotjs className="hover:text-white transition-colors" title="Next.js" />
-                    <SiExpo className="hover:text-white transition-colors" title="React Native" />
-                    <SiTypescript className="hover:text-blue-400 transition-colors" title="TypeScript" />
-                    <SiPostgresql className="hover:text-blue-500 transition-colors" title="PostgreSQL" />
+                    <SiReact
+                      className="hover:text-cyan-400 transition-colors"
+                      title="React"
+                    />
+                    <SiNextdotjs
+                      className="hover:text-white transition-colors"
+                      title="Next.js"
+                    />
+                    <SiExpo
+                      className="hover:text-white transition-colors"
+                      title="React Native"
+                    />
+                    <SiTypescript
+                      className="hover:text-blue-400 transition-colors"
+                      title="TypeScript"
+                    />
+                    <SiPostgresql
+                      className="hover:text-blue-500 transition-colors"
+                      title="PostgreSQL"
+                    />
                   </div>
                 </div>
               </motion.div>
-
             </div>
 
             {/* Right Column: High-Class Interactive Portrait Card */}
@@ -210,10 +258,9 @@ const Welcome = () => {
               {/* Outer Decorative Glow Container */}
               <div className="relative w-full max-w-sm sm:max-w-md group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 via-cyan-500 to-amber-400 rounded-3xl blur-xl opacity-30 group-hover:opacity-60 transition duration-700 animate-pulse-glow" />
-                
+
                 {/* Main Card */}
                 <div className="relative glass-card rounded-3xl p-4 border border-white/10 overflow-hidden shadow-2xl">
-                  
                   {/* Portrait Image Frame */}
                   <div className="relative h-96 sm:h-[420px] rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
                     <img
@@ -222,7 +269,7 @@ const Welcome = () => {
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#06080F] via-transparent to-transparent opacity-70" />
-                    
+
                     {/* Floating Tech Badges on Image */}
                     <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-2 p-3 glass-card rounded-xl border border-white/10 backdrop-blur-md">
                       <div className="flex items-center gap-3">
@@ -230,8 +277,12 @@ const Welcome = () => {
                           3+
                         </div>
                         <div>
-                          <p className="text-xs font-bold text-white font-display">Years Experience</p>
-                          <p className="text-[10px] text-slate-400 font-mono">Full Stack & Mobile</p>
+                          <p className="text-xs font-bold text-white font-display">
+                            Years Experience
+                          </p>
+                          <p className="text-[10px] text-slate-400 font-mono">
+                            Full Stack & Mobile
+                          </p>
                         </div>
                       </div>
 
@@ -243,7 +294,6 @@ const Welcome = () => {
                 </div>
               </div>
             </motion.div>
-
           </section>
 
           {/* SECTIONS */}

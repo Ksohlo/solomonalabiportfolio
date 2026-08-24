@@ -1,8 +1,9 @@
 import profileImg from "./assets/img.png";
 import img1 from "./assets/projects/addre.png";
+import motfam from "./assets/projects/motfam.png";
 import img2 from "./assets/projects/pp.png";
-import img3 from "./assets/projects/techpye.jpg";
-import img4 from "./assets/projects/furnish.png";
+import img3 from "./assets/projects/Edusafe.png";
+import img4 from "./assets/projects/first_choice.png";
 
 // export interface PersonalInfo {
 //   name: string;
@@ -26,7 +27,8 @@ export const personalInfo = {
   phone: "+2348026865926",
   location: "Remote / Worldwide",
   profileImage: profileImg,
-  resumeUrl: "https://drive.google.com/uc?export=download&id=1RtDgvbR4Z1-oaOnO4O6lxKJLk3WtJ8jT",
+  resumeUrl:
+    "https://drive.google.com/uc?export=download&id=1XU7boFyQXG6gPTnIqD99k3I9TU1dHlJl",
   socials: {
     github: "https://github.com/Ksohlo",
     linkedin: "https://www.linkedin.com/in/k-sohlo/",
@@ -93,7 +95,8 @@ export const ProjectList = [
     },
     type: "APP",
     appLink: {
-      android: "https://play.google.com/store/apps/details?id=com.chsg.sayemroute",
+      android:
+        "https://play.google.com/store/apps/details?id=com.chsg.sayemroute",
       ios: "https://apps.apple.com/us/app/sayem-route/id6765875582",
     },
     highlights: [
@@ -150,25 +153,26 @@ export const ProjectList = [
   },
   {
     id: 5,
-    category: "web",
+    category: "app",
     image: img3,
-    name: "Techpye Learning Hub",
-    tagline: "Interactive EdTech & Software Engineering Academy",
-    des: "An advanced Learning Management System (LMS) hosting online video courses, student progress analytics, interactive code playgrounds, and automated certificates.",
+    name: "Edusafe App",
+    tagline: "Realtime educational transport app for parents and Drivers",
+    des: "A mobile app that allows parents onboard their wards and monitor them in realtime whenever they are taken to school.",
     stack: ["React.js", "Express.js", "PostgreSQL", "AWS S3", "Tailwind CSS"],
     link: {
-      live: "https://techpye.com",
-      code: "https://github.com/chsgi/techpye",
+      live: "",
+      code: "",
     },
-    type: "WEB",
+    type: "APP",
     appLink: {
-      android: "",
+      android:
+        "https://play.google.com/store/apps/details?id=com.ksohlo.Edusafe",
       ios: "",
     },
     highlights: [
-      "AWS S3 integration for secure, fast video streaming and asset storage",
+      "Docker for Containerization",
       "PostgreSQL relational database architecture",
-      "Student interactive dashboard & milestone tracking",
+      "Parent and Driver's interactive dashboard & realtime tracking",
     ],
   },
   {
@@ -196,6 +200,29 @@ export const ProjectList = [
   },
   {
     id: 7,
+    category: "web",
+    image: motfam,
+    name: "Motfam Suites",
+    tagline: "Hotel Website for booking and enquires.",
+    des: "An Informational website for motfam suites to get the location of the hotel, make bookings, make inquiries, and send the contact email to the hotel.",
+    stack: ["React", "php", "Tailwind", "Typescript", ""],
+    link: {
+      live: "https://motfamsuites.com",
+      code: "",
+    },
+    type: "WEB",
+    appLink: {
+      android: "",
+      ios: "",
+    },
+    highlights: [
+      "Hotel information and location Design",
+      "Enquires medium",
+      "Room bookings and price list",
+    ],
+  },
+  {
+    id: 8,
     category: "web",
     image: img1,
     name: "Addre RFID Attendance System",
